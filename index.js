@@ -62,10 +62,17 @@ const questions = [
 function writeToFile(fileName, data) {
 }
 
+
 // function to initialize program
-function init() {
-
+async function init() {
+    try {
+        const answers = await inquirer.prompt(questions);
+        const readme = generateMarkdown(answers);
+        await writeFileAsync('README.md', readme);
+        console.log('README.md generated successfully!');
+    } catch (err) {
+        console.log(err);
+    }
 }
-
 // function call to initialize program
 init();
