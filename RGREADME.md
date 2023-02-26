@@ -45,6 +45,11 @@ For usage you need to run node index.js, the application prompts you in the com
 
 Finally, fs.writeFile is used to generate your project's README.md file. If you observe the RGREADME.MD in this repo as an example.
 
+[Inquirer package](https://www.npmjs.com/package/inquirer)
+
+[Good README Guide](../../01-HTML-Git-CSS/04-Important/Good-README-Guide/README.md)
+
+
 
   ## Tests
 
