@@ -18,7 +18,7 @@ function generateMarkdown(data) {
   ## Contributing\n\n${data.contributing}\n\n
   ## Tests\n\n${data.tests}\n\n
   ## Questions\n\n
-  If you have any questions about the repo, open an issue or contact me directly at ${data.email}. You can find more of my work at [${data.username}](https://github.com/${data.username}/).\n\n
+  If you have any questions about the repo, open an issue or contact me directly at ${data.email}. You can find more of my work at [${data.github}](https://www.github.com/${data.github}/).\n\n
   `
 }
 

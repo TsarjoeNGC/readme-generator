@@ -12,7 +12,7 @@ const questions = [
 
 {
     type: 'input',
-    message: "Hi ! Choose a title for your project...",
+    message: "Choose a title for your project...",
     name: 'title'
 },
 {
@@ -66,14 +66,11 @@ const questions = [
 
 // function to initialize program
 async function init() {
-    try {
+    console.log('Hi ! Welcome to the README Generator !')
         const answers = await inquirer.prompt(questions);
         const readme = generateMarkdown(answers);
         await writeFileAsync('README.md', readme);
-        console.log('Congrats ! Your README.md generated in the root folder');
-    } catch (err) {
-        console.log(err);
-    }
+        console.log('Congrats ! Your README.md is created !');
 }
 // function call to initialize program
 init();
