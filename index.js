@@ -18,43 +18,44 @@ const questions = [
 {
     type: 'input',
     message: "Please write a description of your project...",
-    name: 'description',
+    name: 'description'
 },
 {
     type: 'input',
     message: "Write steps which a user can follow to install your project...",
-    name: 'installation',
+    name: 'installation'
 },
 {
     type: 'input',
     message: "Write some usage instructions for your project...",
-    name: 'usage',
+    name: 'usage'
 },
 {
     type: 'input',
     message: "Enter the contribution guidelines for your project...",
-    name: 'contributing',
+    name: 'contributing'
 },
 {
     type: 'input',
     message: "Enter the test instructions for your project...",
-    name: 'tests',
+    name: 'tests'
 },
 {
     type: 'list',
-    message: "Enter a license for your project e.g. MIT/GPLv3...",
+    message: "Choose a license for your project...",
     name: 'license',
-    choices: ['MIT', 'GPLv3', 'Apache 2.0', 'BSD 3-Clause'],
+    choices:["MIT", "ISC"]
+    
 },
 {
     type: 'input',
     message: "Enter your GitHub username...",
-    name: 'github',
+    name: 'github'
 },
 {
     type: 'input',
     message: "Last question :) please: Enter your email address...",
-    name: 'email',
+    name: 'email'
 }
 ]
 
@@ -69,7 +70,7 @@ async function init() {
         const answers = await inquirer.prompt(questions);
         const readme = generateMarkdown(answers);
         await writeFileAsync('README.md', readme);
-        console.log('README.md generated successfully!');
+        console.log('Congrats ! Your README.md generated in the root folder');
     } catch (err) {
         console.log(err);
     }
