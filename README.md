@@ -1,11 +1,5 @@
  Professional README Generator
 
-Deployed Link
-
-https://tsarjoengc.github.io/readme-generator/
-
-
-
   ## Table of Contents
 
 
