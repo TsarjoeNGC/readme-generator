@@ -13,7 +13,7 @@ const questions = [
 {
     type: 'input',
     message: "Hi ! Choose a title for your project...",
-    name: 'title',
+    name: 'title'
 },
 {
     type: 'input',
@@ -59,8 +59,8 @@ const questions = [
 ]
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+// function writeToFile(fileName, data) {
+// }
 
 
 // function to initialize program
